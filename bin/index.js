@@ -1,3 +1,3 @@
 #! /usr/bin/env node
-import cli from "./src/cli";
-cli.start();
+
+import "../lib/index.mjs";

@@ -5,7 +5,6 @@
     "useDefineForClassFields": true,
 
     "lib": ["ESNext", "DOM"],
-    "types": ["node"],
     "moduleResolution": "Node",
 
     "strict": true,
@@ -13,7 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": false,
     "esModuleInterop": true,
-    "noEmit": false,
+    "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
@@ -21,6 +20,6 @@
 
     "baseUrl": "."
   },
-  "include": ["./src", ".eslintrc.cjs"],
+  "include": ["./src", ".eslintrc.cjs", "build.config.ts"],
   "exclude": ["./src/template", "node_modules"]
 }

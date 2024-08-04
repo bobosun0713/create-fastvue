@@ -15,6 +15,7 @@ ${chalk.greenBright(LOGO)}
 program
   .command("create")
   .description(chalk.green("Create a new project"))
+  .description("Create a new project")
   .action(async () => {
     const projectName = await askProjectName();
     const template = await askTemplate();
