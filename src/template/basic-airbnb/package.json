@@ -1,0 +1,41 @@
+{
+  "name": "vue-cli",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --fix . --cache  --cache-location .cache/.eslintcache",
+    "format": "prettier --write --ignore-unknown .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "@vitest/coverage-v8": "^2.0.4",
+    "@vue/eslint-config-airbnb": "^8.0.0",
+    "@vue/test-utils": "^2.4.6",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-vue": "^9.26.0",
+    "husky": "^9.1.1",
+    "jsdom": "^24.1.1",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.2.5",
+    "vite": "^5.3.1",
+    "vitest": "^2.0.4"
+  }
+}
