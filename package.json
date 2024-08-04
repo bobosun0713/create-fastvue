@@ -5,7 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tsx ./src/cli.mts"
+    "test": "tsx ./src/cli.mts",
+    "lint": "eslint --fix --cache  --cache-location .cache/.eslintcache",
+    "format": "prettier --write --ignore-unknown ."
   },
   "bin": {
     "my-cli": "./bin/cli.js"

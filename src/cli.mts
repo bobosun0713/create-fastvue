@@ -1,13 +1,12 @@
 #! /usr/bin/env node
 
-import { program } from "commander";
 import chalk from "chalk";
+import { program } from "commander";
 
-import { VERSION, LOGO } from "./constants";
+import { LOGO, VERSION } from "./constants";
 import { askProjectName, askTemplate } from "./utils/actions";
 import create from "./utils/create";
 
-// 當前版本號
 program.version(`
 ${chalk.green.bold(VERSION)}
 ${chalk.greenBright(LOGO)}
@@ -20,7 +19,7 @@ program
     const projectName = await askProjectName();
     const template = await askTemplate();
 
-    create(projectName, template);
+    void create(projectName, template);
   });
 
 program.parse(process.argv);

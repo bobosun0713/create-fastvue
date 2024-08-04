@@ -5,3 +5,8 @@ node_modules
 # System
 .DS_Store
 
+# Bundle
+dist
+
+# local flies
+.cache

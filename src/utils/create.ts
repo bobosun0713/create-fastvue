@@ -1,10 +1,10 @@
-import * as path from "node:path";
 import * as fs from "node:fs";
+import * as path from "node:path";
 
-import copyDirectory from "./copyDirectory";
 import { askOverwrite } from "./actions";
+import copyDirectory from "./copyDirectory";
 
-async function create(projectName: string, projectType: string) {
+async function create(projectName: string, projectType: string): Promise<void> {
   const cwd = process.cwd();
 
   const targetDirectory = path.join(cwd, projectName);
@@ -22,7 +22,7 @@ async function create(projectName: string, projectType: string) {
       await copyDirectory(templateDirectory, targetDirectory);
     }
   } catch (error) {
-    throw new Error(`🔴 Error creating project: ${error}`);
+    throw new Error(`🔴 Error creating project: ${error as string}`);
   }
 }
 
