@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "useDefineForClassFields": true,
     "module": "ESNext",
+    "useDefineForClassFields": true,
+
     "lib": ["ESNext", "DOM"],
+    "types": ["node"],
     "moduleResolution": "Node",
+
     "strict": true,
     "sourceMap": false,
     "resolveJsonModule": true,
@@ -14,7 +17,10 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+
+    "baseUrl": "."
   },
-  "include": ["./src"]
+  "include": ["./src", ".eslintrc.cjs"],
+  "exclude": ["./src/template", "node_modules"]
 }
