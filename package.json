@@ -1,11 +1,11 @@
 {
-  "name": "vue-cli",
+  "name": "create-fastvue",
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
   "author": "bobosun0713",
   "bin": {
-    "cli": "./bin/index.mjs"
+    "create-fastvue": "./bin/index.mjs"
   },
   "scripts": {
     "build": "unbuild",
