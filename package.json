@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "bobosun0713",
   "bin": {
-    "create-fastvue": "./bin/index.mjs"
+    "create-fastvue": "./bin/index.js"
   },
   "scripts": {
     "build": "unbuild",
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bobosun0713/vue-cil.git"
+    "url": "https://github.com/bobosun0713/create-fastvue.git"
   },
   "bugs": {
-    "url": "https://github.com/bobosun0713/vue-cil/issues"
+    "url": "https://github.com/bobosun0713/create-fastvue/issues"
   },
   "dependencies": {
     "chalk": "^5.3.0",
