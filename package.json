@@ -11,6 +11,7 @@
     "build": "unbuild",
     "lint": "eslint --fix --cache  --cache-location .cache/.eslintcache",
     "format": "prettier --write --ignore-unknown .",
+    "release": "commit-and-tag-version",
     "prepare": "husky || true"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "@rushstack/eslint-patch": "^1.8.0",
     "@types/node": "^20.14.10",
     "@types/prompts": "^2.4.9",
+    "commit-and-tag-version": "^12.4.1",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
