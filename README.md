@@ -1,7 +1,5 @@
 # create-fastvue
 
-<div align="center">
-
 ```
 ███████╗ █████╗ ███████╗████████╗    ██╗   ██╗██╗   ██╗███████╗
 ██╔════╝██╔══██╗██╔════╝╚══██╔══╝    ██║   ██║██║   ██║██╔════╝
@@ -10,8 +8,6 @@
 ██║     ██║  ██║███████║   ██║        ╚████╔╝ ╚██████╔╝███████╗
 ╚═╝     ╚═╝  ╚═╝╚══════╝   ╚═╝         ╚═══╝   ╚═════╝ ╚══════╝
 ```
-
-</div>
 
 Quickly establish a complete development environment for Vue projects, which basically includes the following development tools.
 
