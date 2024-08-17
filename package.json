@@ -7,6 +7,11 @@
   "bin": {
     "create-fastvue": "./bin/index.js"
   },
+  "files": [
+    "bin",
+    "lib",
+    "src/template"
+  ],
   "scripts": {
     "build": "unbuild",
     "lint": "eslint --fix --cache  --cache-location .cache/.eslintcache",
