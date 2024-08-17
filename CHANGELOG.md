@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.3](https://github.com/bobosun0713/create-fastvue/compare/v1.0.2...v1.0.3) (2024-08-17)
+
+
+### Bug Fixes
+
+* **typescript-airbnb:** fix resource link path ([d1ff920](https://github.com/bobosun0713/create-fastvue/commit/d1ff920754d6200b6f22b446954a42caced0603c))
+
 ## [1.0.2](https://github.com/bobosun0713/create-fastvue/compare/v1.0.1...v1.0.2) (2024-08-17)
 
 
