@@ -4,6 +4,7 @@
   "type": "module",
   "license": "MIT",
   "author": "bobosun0713",
+  "description": "Quickly set up the development environment for Vue.",
   "bin": {
     "create-fastvue": "./bin/index.js"
   },
