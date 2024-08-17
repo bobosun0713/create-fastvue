@@ -16,7 +16,7 @@
     "build": "unbuild",
     "lint": "eslint --fix --cache  --cache-location .cache/.eslintcache",
     "format": "prettier --write --ignore-unknown .",
-    "release": "commit-and-tag-version",
+    "release": "pnpm build && HUSKY=0 commit-and-tag-version",
     "prepare": "husky || true"
   },
   "repository": {
