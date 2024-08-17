@@ -1,5 +1,6 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { fileURLToPath, URL } from "node:url";
 
 import { LOGO, VERSION } from "../constants";
 import { askOverwrite } from "./actions";
@@ -40,7 +41,7 @@ async function create(projectName: string, projectType: string): Promise<void> {
   const cwd = process.cwd();
 
   const targetDirectory = path.join(cwd, projectName);
-  const templateDirectory = path.join(cwd, `src/template/${projectType}`);
+  const templateDirectory = fileURLToPath(new URL(`../src/template/${projectType}`, import.meta.url));
   const pkgInfo = pkgFromUserAgent(process.env.npm_config_user_agent);
 
   try {
