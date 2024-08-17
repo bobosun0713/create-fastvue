@@ -1,12 +1,12 @@
-# create-fastvue 
+# create-fastvue
 
 <div align="center">
 
 ```
 ███████╗ █████╗ ███████╗████████╗    ██╗   ██╗██╗   ██╗███████╗
 ██╔════╝██╔══██╗██╔════╝╚══██╔══╝    ██║   ██║██║   ██║██╔════╝
-█████╗  ███████║███████╗   ██║       ██║   ██║██║   ██║█████╗  
-██╔══╝  ██╔══██║╚════██║   ██║       ╚██╗ ██╔╝██║   ██║██╔══╝  
+█████╗  ███████║███████╗   ██║       ██║   ██║██║   ██║█████╗
+██╔══╝  ██╔══██║╚════██║   ██║       ╚██╗ ██╔╝██║   ██║██╔══╝
 ██║     ██║  ██║███████║   ██║        ╚████╔╝ ╚██████╔╝███████╗
 ╚═╝     ╚═╝  ╚═╝╚══════╝   ╚═╝         ╚═══╝   ╚═════╝ ╚══════╝
 ```
@@ -18,10 +18,9 @@ Quickly establish a complete development environment for Vue projects, which bas
 - ✅️ Husky
 - ✅️ Lint-staged
 - ✅️ Commitlint
-- ✅️ ESLint 
+- ✅️ ESLint
 - ✅️ Prettier
 - ✅️ Vitest
-
 
 ## Installation
 
@@ -40,10 +39,11 @@ pnpm create fastvue@latest
 ## Usage
 
 Currently supported template include:
+
 > Node version >= 18+ or 20+ is required.
 
 - basic
-- basic-airbnb 
+- basic-airbnb
 - typescript-airbnb
 
 ## What This Project Is About

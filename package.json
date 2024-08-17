@@ -10,7 +10,8 @@
   "scripts": {
     "build": "unbuild",
     "lint": "eslint --fix --cache  --cache-location .cache/.eslintcache",
-    "format": "prettier --write --ignore-unknown ."
+    "format": "prettier --write --ignore-unknown .",
+    "prepare": "husky || true"
   },
   "repository": {
     "type": "git",
@@ -24,9 +25,13 @@
     "prompts": "^2.4.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@rushstack/eslint-patch": "^1.8.0",
     "@types/node": "^20.14.10",
     "@types/prompts": "^2.4.9",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
@@ -34,6 +39,8 @@
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
     "prettier": "^3.2.5",
     "typescript": "^5.5.3",
     "unbuild": "^2.0.0"

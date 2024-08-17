@@ -20,6 +20,6 @@
 
     "baseUrl": "."
   },
-  "include": ["./src", ".eslintrc.cjs", "build.config.ts"],
+  "include": ["./src", ".eslintrc.cjs", ".lintstagedrc.mjs", "build.config.ts"],
   "exclude": ["./src/template", "node_modules"]
 }

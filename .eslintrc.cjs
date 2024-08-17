@@ -1,5 +1,7 @@
 module.exports = {
   root: true,
+  // ESLint ignores dot files by default: https://eslint.org/docs/v8.x/use/configure/ignore
+  ignorePatterns: ["!.*.js", "!.*.mjs", "!.*.cjs"],
   extends: [
     "airbnb-base",
     "airbnb-typescript/base",
@@ -45,6 +47,18 @@ module.exports = {
     "import/no-named-as-default-member": "off",
     "import/no-unresolved": "off"
   },
+
+  overrides: [
+    {
+      files: ["*.js", "*.mjs", "*.cjs"],
+      rules: {
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/restrict-template-expressions": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off"
+      }
+    }
+  ],
 
   settings: {
     "import/resolver": {
