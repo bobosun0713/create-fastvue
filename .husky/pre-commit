@@ -1,1 +1,1 @@
-pnpm lint-staged
+pnpm lint-staged -c $(git rev-parse --show-toplevel)/.lintstagedrc.mjs

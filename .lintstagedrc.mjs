@@ -1,14 +1,16 @@
 function mapFiles(filenames, { lint = true, ts = false } = {}) {
-  const commands = ["prettier --write"];
-  const lintCheck = "pnpm lint";
-  const typeCheck = "pnpm tsc";
+  const commands = [];
 
-  if (filenames.length) {
-    if (lint) commands.unshift(`${lintCheck} ${filenames.join(" ")}`);
-    if (ts) commands.unshift(typeCheck);
+  // Filter out template files
+  const files = filenames.filter(filename => !filename.includes("src/template"));
+
+  if (files.length) {
+    commands.unshift(`prettier --write ${files.join(" ")}`);
+    if (lint) commands.unshift(`pnpm lint ${files.join(" ")}`);
+    if (ts) commands.unshift("pnpm tsc");
   }
 
-  return commands.map(cmd => ([lintCheck, typeCheck].includes(cmd) ? cmd : `${cmd} ${filenames.join(" ")}`));
+  return commands;
 }
 
 export default {
