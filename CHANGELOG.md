@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.5](https://github.com/bobosun0713/create-fastvue/compare/v1.0.4...v1.0.5) (2024-08-18)
+
+
+### Bug Fixes
+
+* **create-fastvue:** fix the way to obtain versions ([a65edf6](https://github.com/bobosun0713/create-fastvue/commit/a65edf69950438a56a1ca02be534dbf963c923bc))
+
 ## [1.0.4](https://github.com/bobosun0713/create-fastvue/compare/v1.0.3...v1.0.4) (2024-08-17)
 
 ## [1.0.3](https://github.com/bobosun0713/create-fastvue/compare/v1.0.2...v1.0.3) (2024-08-17)
