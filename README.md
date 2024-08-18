@@ -38,7 +38,7 @@ Currently supported template include:
 
 > Node version >= 18+ or 20+ is required.
 
-- basic
+- vanilla
 - basic-airbnb
 - typescript-airbnb
 
