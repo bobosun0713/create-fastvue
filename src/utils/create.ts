@@ -24,17 +24,14 @@ function pkgFromUserAgent(userAgent: string | undefined): PkgInfo | undefined {
 function doneMessage(projectName: string, pkgInfo: PkgInfo | undefined): void {
   const { name } = pkgInfo ?? {};
 
-  console.log(`\n ${VERSION}
-    ${LOGO}
+  console.log(`\n${VERSION}
+  ${LOGO}
+    
+Successfully. Now run:\n
+  step 1 : cd ${projectName}
+  step 2 : ${name ?? "npm"} install
+  step 3 : ${name ?? "npm"} run dev
   `);
-
-  console.log(`Successfully. Now run:\n`);
-
-  console.log(`  step 1 : cd ${projectName}`);
-  console.log(`  step 2 : ${name ?? "npm"} install`);
-  console.log(`  step 3 : ${name ?? "npm"} run dev`);
-
-  console.log();
 }
 
 async function create(projectName: string, projectType: string): Promise<void> {
