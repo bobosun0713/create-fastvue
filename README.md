@@ -42,6 +42,6 @@ Currently supported template include:
 - basic-airbnb
 - typescript-airbnb
 
-## What This Project Is About
+## About
 
 This project isn't for everyone. It's designed to simplify setting up the development environment so developers can get to work quickly. That's why I created this project, and it's also easy to adjust the setup if needed. If you have any suggestions or run into any issues, feel free to contact me. I really appreciate your support!
