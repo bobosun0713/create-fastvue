@@ -39,7 +39,7 @@ Currently supported template include:
 > Node version >= 18+ or 20+ is required.
 
 - vanilla
-- basic-airbnb
+- vanilla-airbnb
 - typescript-airbnb
 
 ## About

@@ -47,7 +47,7 @@ export async function askTemplate(): Promise<string> {
       message: chalk.greenBright("Choose a template :"),
       choices: [
         { title: "vanilla", value: "vanilla" },
-        { title: "basic-airbnb", value: "basic-airbnb" },
+        { title: "vanilla-airbnb", value: "vanilla-airbnb" },
         { title: "typescript-airbnb", value: "typescript-airbnb" }
       ]
     },
