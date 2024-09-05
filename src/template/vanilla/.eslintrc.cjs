@@ -2,7 +2,6 @@
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 const path = require("node:path");
-const createAliasSetting = require("@vue/eslint-config-airbnb/createAliasSetting");
 
 module.exports = {
   root: true,
@@ -54,10 +53,12 @@ module.exports = {
   },
 
   settings: {
-    ...createAliasSetting({
-      "@": path.resolve(__dirname, "./src"),
-      "@tests": path.resolve(__dirname, "./tests")
-    })
+    "import/resolver": {
+      // https://github.com/vuejs/eslint-config-airbnb/blob/main/packages/eslint-config-airbnb/createAliasSetting.js
+      "eslint-import-resolver-custom-alias": {
+        extensions: [".mjs", ".js", ".jsx", ".json", ".node"]
+      }
+    }
   },
 
   // For the test files, we need to add the globals for the test runner
