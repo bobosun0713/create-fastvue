@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --fix . --cache  --cache-location .cache/.eslintcache",
-    "format": "prettier --write --ignore-unknown .",
+    "test": "vitest",
+    "lint": "eslint --fix --cache  --cache-location .cache/.eslintcache",
+    "format": "prettier --write --ignore-unknown",
     "prepare": "husky"
   },
   "dependencies": {

@@ -8,10 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --fix --cache  --cache-location .cache/.eslintcache",
-    "lint:all": "eslint . --fix --cache  --cache-location .cache/.eslintcache",
     "type-check": "vue-tsc --build",
     "type-check:force": "vue-tsc --build --force",
-    "format": "prettier --write --ignore-unknown .",
+    "format": "prettier --write --ignore-unknown",
     "prepare": "husky"
   },
   "dependencies": {

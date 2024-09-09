@@ -26,6 +26,11 @@ export default defineConfig(({ mode }) => ({
   test: {
     root: baseDir("./"),
     globals: true,
-    environment: "jsdom"
+    environment: "jsdom",
+    coverage: {
+      enabled: true,
+      include: ["src/**/*"],
+      reportsDirectory: "./.cache/coverage"
+    }
   }
 }));
