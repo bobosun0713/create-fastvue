@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.0](https://github.com/bobosun0713/create-fastvue/compare/v1.0.8...v1.1.0) (2024-09-10)
+
+
+### Features
+
+* **template:** add typescript-airbnb-tailwindcss template ([219a650](https://github.com/bobosun0713/create-fastvue/commit/219a650bd7584f441d6164426e60da5ebbc379ad))
+
 ## [1.0.8](https://github.com/bobosun0713/create-fastvue/compare/v1.0.7...v1.0.8) (2024-09-09)
 
 ## [1.0.7](https://github.com/bobosun0713/create-fastvue/compare/v1.0.6...v1.0.7) (2024-09-05)
