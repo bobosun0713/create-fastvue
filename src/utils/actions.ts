@@ -49,7 +49,8 @@ export async function askTemplate(): Promise<string> {
         { title: "vanilla", value: "vanilla" },
         { title: "vanilla-airbnb", value: "vanilla-airbnb" },
         { title: "typescript-airbnb", value: "typescript-airbnb" },
-        { title: "typescript-airbnb-tailwindcss", value: "typescript-airbnb-tailwindcss" }
+        { title: "typescript-airbnb-tailwindcss", value: "typescript-airbnb-tailwindcss" },
+        { title: "typescript-airbnb-unplugin-with-import-router", value: "typescript-airbnb-unplugin-with-import-router" }
       ]
     },
     {

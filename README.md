@@ -42,6 +42,7 @@ Currently supported template include:
 - vanilla-airbnb
 - typescript-airbnb
 - typescript-airbnb-tailwindcss
+- typescript-airbnb-unplugin-with-import-router
 
 ## About
 
