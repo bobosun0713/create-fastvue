@@ -1,10 +1,13 @@
 function mapFiles(filenames, lint = true) {
-  const commands = ["prettier --write"];
+  const commands = [];
   const lintCheck = "pnpm lint";
 
-  if (lint) commands.unshift(`${lintCheck} ${filenames.join(" ")}`);
+  if (filenames.length) {
+    commands.push("pnpm format");
+    if (lint) commands.unshift(lintCheck);
+  }
 
-  return commands.map(cmd => (cmd.startsWith("eslint") ? cmd : `${cmd} ${filenames.join(" ")}`));
+  return commands.map(cmd => `${cmd} ${filenames.join(" ")}`);
 }
 
 export default {

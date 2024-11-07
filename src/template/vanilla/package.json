@@ -8,8 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "lint": "eslint --fix --cache  --cache-location .cache/.eslintcache",
-    "format": "prettier --write --ignore-unknown",
+    "lint": "eslint --fix --cache --cache-location .cache/.eslintcache",
+    "lint:all": "pnpm lint .",
+    "format": "prettier --write '!(package|pnpm-lock).*' --ignore-unknown",
+    "format:all": "pnpm format .",
     "prepare": "husky"
   },
   "dependencies": {
