@@ -1,9 +1,10 @@
 function mapFiles(filenames, { lint = true, ts = false } = {}) {
-  const commands = ["pnpm format"];
+  const commands = [];
   const lintCheck = "pnpm lint";
   const typeCheck = "pnpm type-check";
 
   if (filenames.length) {
+    commands.push("pnpm format");
     if (lint) commands.unshift(lintCheck);
     if (ts) commands.unshift(typeCheck);
   }

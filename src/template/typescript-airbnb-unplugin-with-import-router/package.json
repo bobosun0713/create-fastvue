@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "vitest",
     "lint": "eslint --fix --cache --cache-location .cache/.eslintcache",
     "lint:all": "pnpm lint .",
     "type-check": "vue-tsc --build",

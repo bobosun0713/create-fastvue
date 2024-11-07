@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint --fix --cache  --cache-location .cache/.eslintcache",
+    "test": "vitest",
+    "lint": "eslint --fix --cache --cache-location .cache/.eslintcache",
+    "lint:all": "pnpm lint .",
     "type-check": "vue-tsc --build",
-    "type-check:force": "vue-tsc --build --force",
-    "format": "prettier --write --ignore-unknown",
+    "type-check:force": "pnpm type-check --force",
+    "format": "prettier --write '!(package|pnpm-lock).*' --ignore-unknown",
+    "format:all": "pnpm format .",
     "prepare": "husky"
   },
   "dependencies": {
