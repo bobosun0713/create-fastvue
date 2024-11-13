@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.0](https://github.com/bobosun0713/create-fastvue/compare/v1.1.0...v1.2.0) (2024-11-13)
+
+
+### Features
+
+* **template:** add typescript-airbnb-unplugin-with-import-router ([30865c8](https://github.com/bobosun0713/create-fastvue/commit/30865c8cbb6f1d5d0de3e9611f61dcad7fc068fa))
+
 ## [1.1.0](https://github.com/bobosun0713/create-fastvue/compare/v1.0.8...v1.1.0) (2024-09-10)
 
 
