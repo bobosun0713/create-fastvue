@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
-  "schedule": ["after 06:00am and before 13:00pm every weekday"],
+  "timezone": "Asia/Taipei",
+  "schedule": ["after 6am and before 1pm every weekday"],
   "packageRules": [
     {
       "matchUpdateTypes": ["patch"],
