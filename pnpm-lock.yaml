@@ -21,7 +21,7 @@ devDependencies:
     version: 19.6.0
   '@rushstack/eslint-patch':
     specifier: ^1.8.0
-    version: 1.10.4
+    version: 1.10.5
   '@types/node':
     specifier: ^20.14.10
     version: 20.17.12
@@ -994,8 +994,8 @@ packages:
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
     dev: true
 
-  /@rushstack/eslint-patch@1.10.4:
-    resolution: {integrity: sha512-WJgX9nzTqknM393q1QJDJmoW28kUfEnybeTfVNcNAPnIx210RXm2DiXiHzfNPJNIUUb1tJnz/l4QGtJ30PgWmA==}
+  /@rushstack/eslint-patch@1.10.5:
+    resolution: {integrity: sha512-kkKUDVlII2DQiKy7UstOR1ErJP8kUKAQ4oa+SQtM0K+lPdmmjj0YnnxBgtTVYH7mUKtbsxeFC9y0AmK7Yb78/A==}
     dev: true
 
   /@trysound/sax@0.2.0:
@@ -3647,6 +3647,7 @@ packages:
   /jiti@2.4.1:
     resolution: {integrity: sha512-yPBThwecp1wS9DmoA4x4KR2h3QoslacnDR8ypuFM962kI4/456Iy1oHx2RAgh4jfZNdn0bctsdadceiBUgpU1g==}
     hasBin: true
+    requiresBuild: true
     dev: true
 
   /jiti@2.4.2:
