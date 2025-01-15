@@ -5,9 +5,9 @@ import { fileURLToPath, URL } from "node:url";
 import { askOverwrite, askProjectName, askTemplate } from "./utils/actions";
 import { create, doneMessage } from "./utils/create";
 
-async function checkIfOverwrite(targetDirectory: string): Promise<boolean> {
+async function checkIfOverwrite(targetDirectory: string): Promise<boolean | undefined> {
   if (fs.existsSync(targetDirectory)) return askOverwrite();
-  return false;
+  return undefined;
 }
 
 async function getTemplateDirectory(): Promise<string> {
@@ -21,8 +21,10 @@ async function init(): Promise<void> {
     const projectName = await askProjectName();
     const targetDirectory = path.join(cwd, projectName);
 
+    // Check if the target directory already exists
     const isOverwrite = await checkIfOverwrite(targetDirectory);
-    if (!isOverwrite) return;
+    // If the user chooses not to overwrite, exit the program
+    if ([undefined, false].includes(isOverwrite)) return;
 
     const templateDirectory = await getTemplateDirectory();
 

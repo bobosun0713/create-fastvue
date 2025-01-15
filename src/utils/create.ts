@@ -34,7 +34,7 @@ Successfully. Now run:\n
   `);
 }
 
-export async function create(targetDirectory: string, templateDirectory: string, overwrite: boolean): Promise<void> {
+export async function create(targetDirectory: string, templateDirectory: string, overwrite?: boolean): Promise<void> {
   try {
     if (overwrite) await fs.promises.rm(targetDirectory, { recursive: true, force: true });
     await copyDirectory(templateDirectory, targetDirectory);
