@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.1](https://github.com/bobosun0713/create-fastvue/compare/v1.2.0...v1.2.1) (2025-01-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to v5.4.0 ([a56c8d6](https://github.com/bobosun0713/create-fastvue/commit/a56c8d6eaf143443c28169177e9aa7f353ddee37))
+* **deps:** update dependency chalk to v5.4.1 ([4a0b828](https://github.com/bobosun0713/create-fastvue/commit/4a0b8284e0dfd4ee95558f964c51a89cdfb7a586))
+* fix error handler creation ([7f36387](https://github.com/bobosun0713/create-fastvue/commit/7f363871b58c87c93e75fbe1a22ff0407b7d6bb0))
+
 ## [1.2.0](https://github.com/bobosun0713/create-fastvue/compare/v1.1.0...v1.2.0) (2024-11-13)
 
 
