@@ -24,7 +24,7 @@ async function init(): Promise<void> {
     // Check if the target directory already exists
     const isOverwrite = await checkIfOverwrite(targetDirectory);
     // If the user chooses not to overwrite, exit the program
-    if ([undefined, false].includes(isOverwrite)) return;
+    if (isOverwrite === false) return;
 
     const templateDirectory = await getTemplateDirectory();
 
