@@ -24,7 +24,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@rushstack/eslint-patch": "^1.8.0",
     "@vitejs/plugin-vue": "^5.0.5",
-    "@vitest/coverage-v8": "^2.0.4",
+    "@vitest/coverage-v8": "^3.0.0",
     "@vue/eslint-config-airbnb": "^8.0.0",
     "@vue/test-utils": "^2.4.6",
     "commitizen": "^4.3.0",
@@ -39,6 +39,6 @@
     "lint-staged": "^15.2.7",
     "prettier": "^3.2.5",
     "vite": "^6.0.0",
-    "vitest": "^2.0.4"
+    "vitest": "^3.0.0"
   }
 }
