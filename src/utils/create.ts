@@ -29,8 +29,9 @@ export function doneMessage(projectName: string): void {
     
 Successfully. Now run:\n
   step 1 : cd ${projectName}
-  step 2 : ${name ?? "npm"} install
-  step 3 : ${name ?? "npm"} run dev
+  step 2 : git init (required for Husky to work properly)
+  step 3 : ${name ?? "npm"} install
+  step 4 : ${name ?? "npm"} run dev
   `);
 }
 
