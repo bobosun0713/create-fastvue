@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.4](https://github.com/bobosun0713/create-fastvue/compare/v1.2.3...v1.2.4) (2025-04-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pinia to v3 ([5d4bbdf](https://github.com/bobosun0713/create-fastvue/commit/5d4bbdfbdaa9530b137bea623b0d7877061aaeeb))
+
 ## [1.2.3](https://github.com/bobosun0713/create-fastvue/compare/v1.2.2...v1.2.3) (2025-01-15)
 
 ## [1.2.2](https://github.com/bobosun0713/create-fastvue/compare/v1.2.1...v1.2.2) (2025-01-15)
