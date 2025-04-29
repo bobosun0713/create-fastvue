@@ -15,7 +15,11 @@ async function copyDirectory(src: string, dest: string): Promise<void> {
 
   for (const entry of entries) {
     const srcPath = path.join(src, entry.name);
-    const destPath = path.join(dest, entry.name);
+
+    // Rename '_gitignore' to '.gitignore' during copy to avoid npm publish ignoring it
+    // https://github.com/npm/npm-packlist/blob/ff3ad1574a0b941e9b61598c8f8d920040eec6c4/lib/index.js#L14
+    const realDestName = entry.name === "_gitignore" ? ".gitignore" : entry.name;
+    const destPath = path.join(dest, realDestName);
 
     if (entry.isDirectory()) await copyDirectory(srcPath, destPath);
     else await copyFile(srcPath, destPath);
