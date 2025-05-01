@@ -10,7 +10,7 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ["eslint:recommended", "plugin:import/recommended", "plugin:vue/vue3-strongly-recommended", "prettier"],
+  extends: ["eslint:recommended", "plugin:import/recommended", "plugin:vue/strongly-recommended", "prettier"],
   plugins: ["vue", "import", "simple-import-sort"],
   parserOptions: {
     sourceType: "module",
@@ -56,6 +56,7 @@ module.exports = {
     "import/resolver": {
       // https://github.com/vuejs/eslint-config-airbnb/blob/main/packages/eslint-config-airbnb/createAliasSetting.js
       "eslint-import-resolver-custom-alias": {
+        alias: { "@": "./src" },
         extensions: [".mjs", ".js", ".jsx", ".json", ".node"]
       }
     }

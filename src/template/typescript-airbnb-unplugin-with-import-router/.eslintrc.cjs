@@ -9,7 +9,7 @@ module.exports = {
     "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "@vue/eslint-config-airbnb-with-typescript",
-    "plugin:vue/vue3-strongly-recommended",
+    "plugin:vue/strongly-recommended",
     "prettier"
   ],
   plugins: ["vue", "import", "simple-import-sort", "@typescript-eslint"],

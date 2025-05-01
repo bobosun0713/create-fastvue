@@ -15,7 +15,7 @@ module.exports = {
   },
   extends: [
     "plugin:import/recommended",
-    "plugin:vue/vue3-strongly-recommended",
+    "plugin:vue/strongly-recommended",
     "@vue/eslint-config-airbnb",
     "prettier"
   ],
