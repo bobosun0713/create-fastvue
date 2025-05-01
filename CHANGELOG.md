@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.5](https://github.com/bobosun0713/create-fastvue/compare/v1.2.4...v1.2.5) (2025-05-01)
+
+
+### Bug Fixes
+
+* **eslint:** update vue plugin configuration ([6af2d95](https://github.com/bobosun0713/create-fastvue/commit/6af2d95f60dca647941e7e354a0162e9c13e4f62))
+
 ## [1.2.4](https://github.com/bobosun0713/create-fastvue/compare/v1.2.3...v1.2.4) (2025-04-29)
 
 
