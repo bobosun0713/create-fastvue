@@ -40,6 +40,11 @@ module.exports = {
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/prefer-for-of": "off",
 
+    // https://typescript-eslint.io/rules/lines-between-class-members/
+    "@typescript-eslint/lines-between-class-members": "off",
+    // https://typescript-eslint.io/rules/only-throw-error/
+    "@typescript-eslint/no-throw-literal": "off",
+
     // By performance: https://typescript-eslint.io/troubleshooting/typed-linting/performance#eslint-plugin-import
     "import/named": "off",
     "import/namespace": "off",
