@@ -1,64 +1,33 @@
+import { confirm, input, select } from "@inquirer/prompts";
 import chalk from "chalk";
-import prompts from "prompts";
-
-function onCancel(): void {
-  throw new Error(`${chalk.red("✖")} Operation cancelled`);
-}
 
 export async function askOverwrite(): Promise<boolean> {
-  const answer: { overwrite: boolean } = await prompts(
-    {
-      type: "confirm",
-      name: "overwrite",
-      message: chalk.redBright(`Project already exists. Do you want to overwrite it?`)
-    },
-    {
-      onCancel
-    }
-  );
-
-  return answer.overwrite;
+  return await confirm({
+    message: chalk.redBright(`Project already exists. Do you want to overwrite it?`)
+  });
 }
 
 export async function askProjectName(): Promise<string> {
-  const answer: { projectName: string } = await prompts(
-    {
-      type: "text",
-      name: "projectName",
-      message: chalk.greenBright("Project name :"),
-      validate: val => {
-        if (!val) return "Project name cannot be empty";
-        return true;
-      }
-    },
-    {
-      onCancel
+  return await input({
+    message: chalk.greenBright("Project name :"),
+    validate: val => {
+      if (!val) return "Project name cannot be empty";
+      return true;
     }
-  );
-
-  return answer.projectName;
+  });
 }
 
 export async function askTemplate(): Promise<string> {
-  const answer: { template: string } = await prompts(
-    {
-      type: "select",
-      name: "template",
-      message: chalk.greenBright("Choose a template :"),
-      choices: [
-        { title: "vanilla", value: "vanilla" },
-        { title: "vanilla-airbnb", value: "vanilla-airbnb" },
-        { title: "typescript-airbnb", value: "typescript-airbnb" },
-        { title: "typescript-airbnb-tailwindcss", value: "typescript-airbnb-tailwindcss" },
-        { title: "typescript-airbnb-unplugin-with-import-router", value: "typescript-airbnb-unplugin-with-import-router" }
-      ]
-    },
-    {
-      onCancel
-    }
-  );
-
-  return answer.template;
+  return await select({
+    message: chalk.greenBright("Choose a template :"),
+    choices: [
+      { name: "vanilla", value: "vanilla" },
+      { name: "vanilla-airbnb", value: "vanilla-airbnb" },
+      { name: "typescript-airbnb", value: "typescript-airbnb" },
+      { name: "typescript-airbnb-tailwindcss", value: "typescript-airbnb-tailwindcss" },
+      { name: "typescript-airbnb-unplugin-with-import-router", value: "typescript-airbnb-unplugin-with-import-router" }
+    ]
+  });
 }
 
 export default {

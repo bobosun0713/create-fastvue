@@ -2,6 +2,8 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath, URL } from "node:url";
 
+import chalk from "chalk";
+
 import { askOverwrite, askProjectName, askTemplate } from "./utils/actions";
 import { create, doneMessage } from "./utils/create";
 
@@ -32,7 +34,8 @@ async function init(): Promise<void> {
 
     doneMessage(projectName);
   } catch (error) {
-    if (error instanceof Error) console.error(error.message);
+    if (error instanceof Error && error.name === "ExitPromptError")
+      console.error(`${chalk.red("✖")} Operation cancelled`);
     else console.error("An unknown error occurred.");
   }
 }
