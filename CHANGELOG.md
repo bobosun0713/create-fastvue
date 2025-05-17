@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.0](https://github.com/bobosun0713/create-fastvue/compare/v1.2.5...v1.3.0) (2025-05-17)
+
+
+### Features
+
+* **template:** add vue-typescript template for ESLint v9 ([0630e3b](https://github.com/bobosun0713/create-fastvue/commit/0630e3be255046709a2fddae591a9b523205e0c4))
+
 ## [1.2.5](https://github.com/bobosun0713/create-fastvue/compare/v1.2.4...v1.2.5) (2025-05-01)
 
 
