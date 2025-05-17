@@ -1,4 +1,4 @@
-import { confirm, input, select } from "@inquirer/prompts";
+import { confirm, input, select, Separator } from "@inquirer/prompts";
 import chalk from "chalk";
 
 export async function askOverwrite(): Promise<boolean> {
@@ -25,7 +25,9 @@ export async function askTemplate(): Promise<string> {
       { name: "vanilla-airbnb", value: "vanilla-airbnb" },
       { name: "typescript-airbnb", value: "typescript-airbnb" },
       { name: "typescript-airbnb-tailwindcss", value: "typescript-airbnb-tailwindcss" },
-      { name: "typescript-airbnb-unplugin-with-import-router", value: "typescript-airbnb-unplugin-with-import-router" }
+      { name: "typescript-airbnb-unplugin-with-import-router", value: "typescript-airbnb-unplugin-with-import-router" },
+      new Separator("────── Beta (ESLint v9) ──────"),
+      { name: "vue-typescript", value: "vue-typescript" }
     ]
   });
 }
