@@ -2,7 +2,7 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 
 defineOptions({
-  name: "home"
+  name: "Home"
 });
 </script>
 

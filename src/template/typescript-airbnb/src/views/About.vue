@@ -1,6 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineOptions({
+  name: "About"
+});
+</script>
 
-<template>  
+<template>
   <div class="about">
     <h2>The project includes the following packages:</h2>
     <ul>
