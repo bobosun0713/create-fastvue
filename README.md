@@ -43,6 +43,7 @@ Currently supported template include:
 - typescript-airbnb
 - typescript-airbnb-tailwindcss
 - typescript-airbnb-unplugin-with-import-router
+- vue-typescript (ESLint v9)
 
 ## Dependency Configuration
 
