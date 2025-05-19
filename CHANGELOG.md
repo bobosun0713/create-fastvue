@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.2](https://github.com/bobosun0713/create-fastvue/compare/v1.3.1...v1.3.2) (2025-05-19)
+
+
+### Bug Fixes
+
+* **template:** update ESLint config to include .cache and improve file matching pattern ([eb3e259](https://github.com/bobosun0713/create-fastvue/commit/eb3e259f66103e307956c1e33eb5f40b56b5fcd7))
+
 ## [1.3.1](https://github.com/bobosun0713/create-fastvue/compare/v1.3.0...v1.3.1) (2025-05-18)
 
 ## [1.3.0](https://github.com/bobosun0713/create-fastvue/compare/v1.2.5...v1.3.0) (2025-05-17)
