@@ -6,7 +6,7 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import pluginVue from "eslint-plugin-vue";
 
 export default defineConfigWithVueTs(
-  { name: "custom-ignores", ignores: ["node_modules", "dist", "public"] },
+  { name: "custom-ignores", ignores: ["node_modules", "dist", "public", ".cache"] },
 
   pluginImportX.flatConfigs.recommended,
   pluginImportX.flatConfigs.typescript,
@@ -86,7 +86,7 @@ export default defineConfigWithVueTs(
 
   {
     name: "custom-specific-rules",
-    files: [".*.mjs", "tests/*.spec.ts"],
+    files: ["**/?(*.)*?([cm])js"],
     rules: {
       "@typescript-eslint/explicit-function-return-type": "off"
     }
