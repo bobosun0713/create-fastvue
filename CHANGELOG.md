@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.5](https://github.com/bobosun0713/create-fastvue/compare/v1.3.4...v1.3.5) (2025-05-22)
+
+
+### Bug Fixes
+
+* **template:** remove composite from tsconfig ([352c27a](https://github.com/bobosun0713/create-fastvue/commit/352c27ab3706817dc1c098218bf4bd6e9505037e))
+* **template:** update tsconfig include paths ([f4fac7d](https://github.com/bobosun0713/create-fastvue/commit/f4fac7d7f419add8499c0b31bef9cc5a42875e43))
+* **template:** update type-check:force command ([7445b59](https://github.com/bobosun0713/create-fastvue/commit/7445b594c32dcdb29acc44e49f14a7bd11325f55))
+
 ## [1.3.4](https://github.com/bobosun0713/create-fastvue/compare/v1.3.3...v1.3.4) (2025-05-21)
 
 
