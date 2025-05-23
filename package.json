@@ -49,7 +49,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "husky": "^9.1.4",
-    "lint-staged": "^15.2.9",
+    "lint-staged": "^16.0.0",
     "prettier": "^3.2.5",
     "typescript": "^5.5.3",
     "unbuild": "^3.0.0"
