@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.6](https://github.com/bobosun0713/create-fastvue/compare/v1.3.5...v1.3.6) (2025-05-23)
+
+
+### Bug Fixes
+
+* **template:** add @types/jsdom and enable incremental builds in tsconfig files ([ae817b1](https://github.com/bobosun0713/create-fastvue/commit/ae817b1e7fc977f62e50a523313a8fa7a93ce7f9))
+
 ## [1.3.5](https://github.com/bobosun0713/create-fastvue/compare/v1.3.4...v1.3.5) (2025-05-22)
 
 
