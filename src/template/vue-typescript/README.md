@@ -1,4 +1,4 @@
-# vue-typeScript
+# vue-typescript
 
 This folder contains a Vue 3 + TypeScript starter template for your project. Below is an overview of its structure and purpose.
 

@@ -3,6 +3,7 @@
   "include": ["vite.config.*", "vitest.config.*", "eslint.config.*"],
   "compilerOptions": {
     "noEmit": true,
+    "incremental": true,
     "tsBuildInfoFile": "./.cache/tsconfig.node.tsbuildinfo",
 
     "module": "ESNext",

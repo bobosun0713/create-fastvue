@@ -2,9 +2,10 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": ["src/**/*", "src/**/*.vue", "types/**/*.d.ts"],
   "compilerOptions": {
-    "tsBuildInfoFile": "./.cache/tsconfig.app.tsbuildinfo",
+    "incremental": true,
     "moduleResolution": "Bundler",
-    
+    "tsBuildInfoFile": "./.cache/tsconfig.app.tsbuildinfo",
+
     "paths": {
       "@/*": ["./src/*"]
     }
