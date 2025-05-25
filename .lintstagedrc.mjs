@@ -7,7 +7,7 @@ function mapFiles(filenames, { lint = true, ts = false } = {}) {
   if (files.length) {
     commands.unshift(`prettier --write ${files.join(" ")}`);
     if (lint) commands.unshift(`pnpm lint ${files.join(" ")}`);
-    if (ts) commands.unshift("pnpm tsc");
+    if (ts) commands.unshift("pnpm type-check");
   }
 
   return commands;
