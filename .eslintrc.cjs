@@ -55,7 +55,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ["*.js", "*.mjs", "*.cjs"],
+      files: ["**/?(*.)*?([cm])js"],
       rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-unsafe-call": "off",
@@ -65,14 +65,5 @@ module.exports = {
         "@typescript-eslint/no-unsafe-return": "off"
       }
     }
-  ],
-
-  settings: {
-    "import/resolver": {
-      typescript: {
-        alwaysTryTypes: true,
-        project: "./tsconfig.json"
-      }
-    }
-  }
+  ]
 };
