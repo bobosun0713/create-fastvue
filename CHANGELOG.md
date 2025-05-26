@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.7](https://github.com/bobosun0713/create-fastvue/compare/v1.3.6...v1.3.7) (2025-05-26)
+
+
+### Bug Fixes
+
+* **linting:** update type-check command ([91b387f](https://github.com/bobosun0713/create-fastvue/commit/91b387f5e4c41a6a9aed5ca9babaff15261d9a59))
+* **template:** update import rules for vue-typescript template ([884b148](https://github.com/bobosun0713/create-fastvue/commit/884b148ba267d5e7739e68be78314ca48412f6cb))
+
 ## [1.3.6](https://github.com/bobosun0713/create-fastvue/compare/v1.3.5...v1.3.6) (2025-05-23)
 
 
