@@ -11,7 +11,7 @@
     "lint": "eslint --fix --cache --cache-location .cache/.eslintcache",
     "lint:all": "pnpm lint .",
     "type-check": "vue-tsc --build",
-    "type-check:force": "vue-tsc --build --force",
+    "type-check:force": "pnpm run type-check --force",
     "format": "prettier --write '!(package|pnpm-lock).*' --ignore-unknown",
     "format:all": "pnpm format .",
     "prepare": "husky"
