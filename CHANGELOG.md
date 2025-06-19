@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.8](https://github.com/bobosun0713/create-fastvue/compare/v1.3.7...v1.3.8) (2025-06-19)
+
+
+### Bug Fixes
+
+* **template:** enhance ESLint configuration for Vue TypeScript support ([17eb5ab](https://github.com/bobosun0713/create-fastvue/commit/17eb5aba25a644ef1c4ba0699355421ccb976433))
+
 ## [1.3.7](https://github.com/bobosun0713/create-fastvue/compare/v1.3.6...v1.3.7) (2025-05-26)
 
 
