@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.9](https://github.com/bobosun0713/create-fastvue/compare/v1.3.8...v1.3.9) (2025-06-29)
+
+
+### Bug Fixes
+
+* **template:** remove unused parser configurations ([5c10835](https://github.com/bobosun0713/create-fastvue/commit/5c1083552ec7129f3534cc4436f7efe608420b00))
+* **template:** update devDependencies for vue-typescript ([96de027](https://github.com/bobosun0713/create-fastvue/commit/96de027316a6efc92c1144f1bff3e8b6f332c933))
+
 ## [1.3.8](https://github.com/bobosun0713/create-fastvue/compare/v1.3.7...v1.3.8) (2025-06-19)
 
 
