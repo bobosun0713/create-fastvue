@@ -57,10 +57,11 @@ Due to differences in how various package managers (npm, Yarn, pnpm) handle `pee
 To ensure that necessary `peerDependencies` are properly loaded across different package managers and versions, the following key package will be explicitly installed:
 
 - vue-eslint-parse
+- typescript-eslint
 
 Failure to account for these differences may lead to runtime errors such as Cannot find module 'xxx', potentially affecting development and CI/CD stability.
 
-> Related discussion: pnpm Issue [#9438](https://github.com/pnpm/pnpm/issues/9438)
+> Related discussion: [#9438](https://github.com/pnpm/pnpm/issues/9438)
 
 ## About
 
