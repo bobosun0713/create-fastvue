@@ -5,8 +5,6 @@ import { createTypeScriptImportResolver } from "eslint-import-resolver-typescrip
 import * as pluginImportX from "eslint-plugin-import-x";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import pluginVue from "eslint-plugin-vue";
-import tseslint from "typescript-eslint";
-import vueParser from "vue-eslint-parser";
 
 export default defineConfigWithVueTs(
   { name: "custom-ignores", ignores: ["node_modules", "dist", "public", ".cache"] },
@@ -66,15 +64,6 @@ export default defineConfigWithVueTs(
   vueTsConfigs.stylisticTypeChecked,
   {
     name: "custom-vue-typescript-rules",
-    files: ["**/*.ts", "**/*.mts", "**/*.vue"],
-    languageOptions: {
-      parser: vueParser,
-      parserOptions: {
-        parser: tseslint.parser,
-        projectService: true,
-        extraFileExtensions: [".vue"]
-      }
-    },
     rules: {
       "vue/multi-word-component-names": "off",
       "vue/no-reserved-component-names": "off",
