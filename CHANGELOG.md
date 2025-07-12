@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.10](https://github.com/bobosun0713/create-fastvue/compare/v1.3.9...v1.3.10) (2025-07-12)
+
+
+### Bug Fixes
+
+* **template:** remove outdated dependencies ([5639849](https://github.com/bobosun0713/create-fastvue/commit/5639849d1818f562ddac19fbdad7365df095d9d2))
+
 ## [1.3.9](https://github.com/bobosun0713/create-fastvue/compare/v1.3.8...v1.3.9) (2025-06-29)
 
 
