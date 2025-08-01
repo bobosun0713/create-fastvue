@@ -20,11 +20,11 @@ function pkgFromUserAgent(userAgent: string | undefined): PkgInfo | undefined {
   };
 }
 
-export function doneMessage(projectName: string): void {
+export function doneMessage(projectName: string): string {
   const pkgInfo = pkgFromUserAgent(process.env.npm_config_user_agent);
   const { name } = pkgInfo ?? {};
 
-  console.log(`\n${VERSION}
+  return `\n${VERSION}
   ${LOGO}
     
 Successfully. Now run:\n
@@ -32,7 +32,7 @@ Successfully. Now run:\n
   step 2 : git init (required for Husky to work properly)
   step 3 : ${name ?? "npm"} install
   step 4 : ${name ?? "npm"} run dev
-  `);
+  `;
 }
 
 export async function create(targetDirectory: string, templateDirectory: string, overwrite?: boolean): Promise<void> {
