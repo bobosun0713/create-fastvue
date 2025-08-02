@@ -5,7 +5,6 @@ import * as path from "node:path";
 import * as util from "node:util";
 
 import { LOGO, VERSION } from "../constants";
-import { detectPackageManager } from "./helper";
 
 const mkdir = util.promisify(fs.mkdir);
 const copyFile = util.promisify(fs.copyFile);
@@ -28,8 +27,7 @@ function pkgFromUserAgent(userAgent: string | undefined):
 }
 
 export function doneMessage(projectName: string): string {
-  const pkgInfo = pkgFromUserAgent(process.env.npm_config_user_agent);
-  const { name } = pkgInfo ?? {};
+  const { name } = pkgFromUserAgent(process.env.npm_config_user_agent) ?? { name: "npm" };
 
   return `\n${VERSION}
   ${LOGO}
@@ -37,19 +35,19 @@ export function doneMessage(projectName: string): string {
 Successfully. Now run:\n
   step 1 : cd ${projectName}
   step 2 : git init (required for Husky to work properly)
-  step 3 : ${name ?? "npm"} install
-  step 4 : ${name ?? "npm"} run dev
+  step 3 : ${name} install
+  step 4 : ${name} run dev
   `;
 }
 
 export function createHuskyCommand(targetDirectory: string): void {
-  const packageManager = detectPackageManager();
+  const { name: pkgName } = pkgFromUserAgent(process.env.npm_config_user_agent) ?? { name: "npx" };
   const huskyDir = path.join(targetDirectory, ".husky");
 
   const hooks: Record<string, string>[] = [
-    { name: "commit-msg", script: `${packageManager} commitlint --edit` },
-    { name: "pre-commit", script: `${packageManager} lint-staged` },
-    { name: "prepare-commit-msg", script: `exec < /dev/tty && ${packageManager} git-cz --hook || true` }
+    { name: "commit-msg", script: `${pkgName} commitlint --edit` },
+    { name: "pre-commit", script: `${pkgName} lint-staged` },
+    { name: "prepare-commit-msg", script: `exec < /dev/tty && ${pkgName} git-cz --hook || true` }
   ];
 
   for (const { name, script } of hooks) {
