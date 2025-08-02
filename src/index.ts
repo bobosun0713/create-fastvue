@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from "node:url";
 import { cancel, confirm, intro, isCancel, outro, select, text } from "@clack/prompts";
 import color from "picocolors";
 
-import { create, doneMessage } from "./utils/create";
+import { create, createHuskyCommand, doneMessage } from "./utils";
 
 function askProjectName(): Promise<string | symbol> {
   return text({
@@ -48,7 +48,7 @@ function handleExit(cb: () => boolean): void {
 
 async function init(): Promise<void> {
   const cwd = process.cwd();
-  intro(color.bgGreenBright(" create-fastvue "));
+  intro(color.bgBlackBright(" create-fastvue "));
 
   const projectName = (await askProjectName()) as string;
   handleExit(() => isCancel(projectName));
@@ -64,6 +64,7 @@ async function init(): Promise<void> {
 
   try {
     await create(targetDirectory, templateDirectory, isOverwrite as boolean);
+    createHuskyCommand(targetDirectory);
     outro(doneMessage(projectName));
   } catch {
     cancel("An unknown error occurred.");
