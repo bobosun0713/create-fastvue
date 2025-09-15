@@ -48,6 +48,9 @@ src/
 
 This template includes support for maintaining code quality using **ESLint**, **Prettier**, and **Husky**.
 
+> [!NOTE]
+> Due to performance concerns, `eslint-plugin-prettier` was not installed. In addition to using the package scripts, you can manually configure ESLint and Prettier keyboard shortcuts to lint and format the code.
+
 - **ESLint**:
 
   Helps you write consistent and error-free code. Run it with:
