@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.4.3](https://github.com/bobosun0713/create-fastvue/compare/v1.4.2...v1.4.3) (2025-09-15)
+
 ## [1.4.2](https://github.com/bobosun0713/create-fastvue/compare/v1.4.1...v1.4.2) (2025-08-02)
 
 
