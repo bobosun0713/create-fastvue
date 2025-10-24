@@ -79,7 +79,7 @@ function runDev(projectDir: string): void {
   const agent = detectPackageManager();
 
   const args = {
-    npm: ["run", "dev", "--open"],
+    npm: ["run", "dev", "--", "--open"],
     pnpm: ["dev", "--open"],
     yarn: ["dev", "--open"],
     bun: ["dev", "--open"]
