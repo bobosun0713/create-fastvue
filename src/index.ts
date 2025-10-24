@@ -41,7 +41,7 @@ function askOverwrite(targetDirectory: string): Promise<boolean | symbol> | unde
   return undefined;
 }
 
-function askInstallAndStarNow(): Promise<boolean | symbol> {
+function askInstallAndStartNow(): Promise<boolean | symbol> {
   return confirm({ message: "Install and start now?" });
 }
 
@@ -105,7 +105,7 @@ async function init(): Promise<void> {
   const templateType = (await askTemplate()) as string;
   handleExit(() => isCancel(templateType));
 
-  const isInstallStart = await askInstallAndStarNow();
+  const isInstallStart = await askInstallAndStartNow();
 
   const templateDirectory = fileURLToPath(new URL(`../src/template/${templateType}`, import.meta.url));
 
