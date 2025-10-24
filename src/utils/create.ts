@@ -1,13 +1,8 @@
-/* eslint-disable no-await-in-loop */
-/* eslint-disable no-restricted-syntax */
 import * as fs from "node:fs";
 import * as path from "node:path";
-import * as util from "node:util";
+import process from "node:process";
 
 import { LOGO, VERSION } from "../constants";
-
-const mkdir = util.promisify(fs.mkdir);
-const copyFile = util.promisify(fs.copyFile);
 
 function pkgFromUserAgent(userAgent: string | undefined):
   | {
@@ -50,19 +45,19 @@ export function createHuskyCommand(targetDirectory: string): void {
     { name: "prepare-commit-msg", script: `exec < /dev/tty && ${pkgName} git-cz --hook || true` }
   ];
 
-  for (const { name, script } of hooks) {
+  hooks.forEach(({ name, script }) => {
     const hookPath = path.join(huskyDir, name);
     if (fs.existsSync(hookPath)) {
       fs.writeFileSync(hookPath, script, { encoding: "utf-8" });
       fs.chmodSync(hookPath, 0o755);
     }
-  }
+  });
 }
 
-export async function copyDirectory(src: string, dest: string): Promise<void> {
-  await mkdir(dest, { recursive: true });
+export function copyDirectory(src: string, dest: string): void {
+  fs.mkdirSync(dest, { recursive: true });
 
-  const entries = await fs.promises.readdir(src, { withFileTypes: true });
+  const entries = fs.readdirSync(src, { withFileTypes: true });
 
   for (const entry of entries) {
     const srcPath = path.join(src, entry.name);
@@ -72,16 +67,12 @@ export async function copyDirectory(src: string, dest: string): Promise<void> {
     const realDestName = entry.name === "_gitignore" ? ".gitignore" : entry.name;
     const destPath = path.join(dest, realDestName);
 
-    if (entry.isDirectory()) await copyDirectory(srcPath, destPath);
-    else await copyFile(srcPath, destPath);
+    if (entry.isDirectory()) copyDirectory(srcPath, destPath);
+    else fs.copyFileSync(srcPath, destPath);
   }
 }
 
-export async function create(targetDirectory: string, templateDirectory: string, overwrite?: boolean): Promise<void> {
-  try {
-    if (overwrite) await fs.promises.rm(targetDirectory, { recursive: true, force: true });
-    await copyDirectory(templateDirectory, targetDirectory);
-  } catch (error) {
-    throw new Error(`🔴 Error creating project: ${error as string}`);
-  }
+export function create(targetDirectory: string, templateDirectory: string, overwrite?: boolean): void {
+  if (overwrite) fs.rmSync(targetDirectory, { recursive: true, force: true });
+  copyDirectory(templateDirectory, targetDirectory);
 }
