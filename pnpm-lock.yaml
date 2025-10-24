@@ -7,14 +7,10 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       '@clack/prompts':
         specifier: ^0.11.0
         version: 0.11.0
-      picocolors:
-        specifier: ^1.1.1
-        version: 1.1.1
-    devDependencies:
       '@commitlint/cli':
         specifier: ^19.4.0
         version: 19.8.1(@types/node@20.19.9)(typescript@5.8.3)
@@ -24,6 +20,9 @@ importers:
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
         version: 1.12.0
+      '@types/cross-spawn':
+        specifier: ^6.0.6
+        version: 6.0.6
       '@types/node':
         specifier: ^20.14.10
         version: 20.19.9
@@ -39,6 +38,9 @@ importers:
       commitizen:
         specifier: ^4.3.0
         version: 4.3.1(@types/node@20.19.9)(typescript@5.8.3)
+      cross-spawn:
+        specifier: ^7.0.6
+        version: 7.0.6
       cz-conventional-changelog:
         specifier: ^3.3.0
         version: 3.3.0(@types/node@20.19.9)(typescript@5.8.3)
@@ -66,6 +68,9 @@ importers:
       lint-staged:
         specifier: ^15.2.9
         version: 15.5.2
+      picocolors:
+        specifier: ^1.1.1
+        version: 1.1.1
       prettier:
         specifier: ^3.2.5
         version: 3.5.3
@@ -558,6 +563,9 @@ packages:
 
   '@types/conventional-commits-parser@5.0.1':
     resolution: {integrity: sha512-7uz5EHdzz2TqoMfV7ee61Egf5y6NkcO4FB/1iCCQnbeiI1F3xzv3vK5dBCXUCLQgGYS+mUeigK1iKQzvED+QnQ==}
+
+  '@types/cross-spawn@6.0.6':
+    resolution: {integrity: sha512-fXRhhUkG4H3TQk5dBhQ7m/JDdSNHKwR2BBia62lhwEIq9xGiQKLxd6LymNhn47SjXhsUEPmxi+PKw2OkW4LLjA==}
 
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
@@ -3635,6 +3643,10 @@ snapshots:
   '@trysound/sax@0.2.0': {}
 
   '@types/conventional-commits-parser@5.0.1':
+    dependencies:
+      '@types/node': 20.19.9
+
+  '@types/cross-spawn@6.0.6':
     dependencies:
       '@types/node': 20.19.9
 

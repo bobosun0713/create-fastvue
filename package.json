@@ -30,19 +30,18 @@
   "bugs": {
     "url": "https://github.com/bobosun0713/create-fastvue/issues"
   },
-  "dependencies": {
-    "@clack/prompts": "^0.11.0",
-    "picocolors": "^1.1.1"
-  },
   "devDependencies": {
+    "@clack/prompts": "^0.11.0",
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@rushstack/eslint-patch": "^1.8.0",
+    "@types/cross-spawn": "^6.0.6",
     "@types/node": "^20.14.10",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
     "commit-and-tag-version": "^12.4.1",
     "commitizen": "^4.3.0",
+    "cross-spawn": "^7.0.6",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -52,6 +51,7 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.9",
+    "picocolors": "^1.1.1",
     "prettier": "^3.2.5",
     "typescript": "^5.5.3",
     "unbuild": "^3.0.0"
