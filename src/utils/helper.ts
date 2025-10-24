@@ -1,3 +1,5 @@
+import process from "node:process";
+
 import { execSync } from "child_process";
 
 export function commandExistsSync(command: string): boolean {
@@ -9,7 +11,9 @@ export function commandExistsSync(command: string): boolean {
 }
 
 export function detectPackageManager(): string {
-  if (commandExistsSync("pnpm")) return "pnpm";
-  if (commandExistsSync("yarn")) return "yarn";
-  return "npx";
+  const agent = process.env.npm_config_user_agent ?? "";
+  if (agent.startsWith("pnpm")) return "pnpm";
+  if (agent.startsWith("yarn")) return "yarn";
+  if (agent.startsWith("bun")) return "bun";
+  return "npm";
 }
