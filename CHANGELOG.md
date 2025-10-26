@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.5.1](https://github.com/bobosun0713/create-fastvue/compare/v1.5.0...v1.5.1) (2025-10-26)
+
+
+### Bug Fixes
+
+* **cli:** adjust command for opening new window ([4a21c06](https://github.com/bobosun0713/create-fastvue/commit/4a21c06cb82c424f243eb9b8a4fb8defbfc243b8))
+
 ## [1.5.0](https://github.com/bobosun0713/create-fastvue/compare/v1.4.3...v1.5.0) (2025-10-24)
 
 
