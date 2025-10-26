@@ -106,6 +106,7 @@ async function init(): Promise<void> {
   handleExit(() => isCancel(templateType));
 
   const isInstallStart = await askInstallAndStartNow();
+  handleExit(() => isCancel(isInstallStart));
 
   const templateDirectory = fileURLToPath(new URL(`../src/template/${templateType}`, import.meta.url));
 
