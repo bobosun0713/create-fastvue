@@ -12,14 +12,6 @@
       "typescript",
       "typescriptreact",
       "vue",
-      "html",
-      "markdown",
-      "json",
-      "json5",
-      "jsonc",
-      "yaml",
-      "toml",
-      "xml"
     ],
   
     "typescript.tsdk": "node_modules/typescript/lib"
