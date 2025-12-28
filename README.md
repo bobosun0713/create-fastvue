@@ -26,10 +26,16 @@ With NPM:
 npm create fastvue@latest
 ```
 
+With Yarn:
+
+```
+yarn create fastvue
+```
+
 With PNPM:
 
 ```
-pnpm create fastvue@latest
+pnpm create fastvue
 ```
 
 ## Usage
