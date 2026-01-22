@@ -18,7 +18,8 @@
     "noImplicitReturns": true,
     "skipLibCheck": true,
 
-    "baseUrl": "."
+    "baseUrl": ".",
+    "tsBuildInfoFile": "./.cache/tsconfig.tsbuildinfo"
   },
   "include": ["./src", ".eslintrc.cjs", ".lintstagedrc.mjs", "build.config.ts"],
   "exclude": ["./src/template", "node_modules"]

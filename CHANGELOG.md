@@ -2,6 +2,119 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.5.3](https://github.com/bobosun0713/create-fastvue/compare/v1.5.2...v1.5.3) (2026-01-12)
+
+## [1.5.2](https://github.com/bobosun0713/create-fastvue/compare/v1.5.1...v1.5.2) (2025-11-09)
+
+## [1.5.1](https://github.com/bobosun0713/create-fastvue/compare/v1.5.0...v1.5.1) (2025-10-26)
+
+
+### Bug Fixes
+
+* **cli:** adjust command for opening new window ([4a21c06](https://github.com/bobosun0713/create-fastvue/commit/4a21c06cb82c424f243eb9b8a4fb8defbfc243b8))
+
+## [1.5.0](https://github.com/bobosun0713/create-fastvue/compare/v1.4.3...v1.5.0) (2025-10-24)
+
+
+### Features
+
+* support auto install and start dev ([cc43eaf](https://github.com/bobosun0713/create-fastvue/commit/cc43eaf7aaf10e0648b9f597b137e3d1689e4e25))
+
+## [1.4.3](https://github.com/bobosun0713/create-fastvue/compare/v1.4.2...v1.4.3) (2025-09-15)
+
+## [1.4.2](https://github.com/bobosun0713/create-fastvue/compare/v1.4.1...v1.4.2) (2025-08-02)
+
+
+### Bug Fixes
+
+* improve package manager detection ([86e5f63](https://github.com/bobosun0713/create-fastvue/commit/86e5f63ce887f8c5758298516284cd31b6978090))
+
+## [1.4.1](https://github.com/bobosun0713/create-fastvue/compare/v1.4.0...v1.4.1) (2025-08-02)
+
+## [1.4.0](https://github.com/bobosun0713/create-fastvue/compare/v1.3.10...v1.4.0) (2025-08-01)
+
+
+### Features
+
+* **deps:** add @clack/prompts and picocolors ([f483e57](https://github.com/bobosun0713/create-fastvue/commit/f483e57981a14a66630623411c82999eb2aa8225))
+* migrate from @inquirer/prompts to @clack/prompts and update project prompts ([29e12e7](https://github.com/bobosun0713/create-fastvue/commit/29e12e7ce25f80b2625cefb097843661645a3708))
+
+
+### Bug Fixes
+
+* **deps:** remove @inquirer/prompts and chalk ([1ae5211](https://github.com/bobosun0713/create-fastvue/commit/1ae52114e00d3793ef898e270e25faa87d4a79da))
+
+## [1.3.10](https://github.com/bobosun0713/create-fastvue/compare/v1.3.9...v1.3.10) (2025-07-12)
+
+
+### Bug Fixes
+
+* **template:** remove outdated dependencies ([4170da2](https://github.com/bobosun0713/create-fastvue/commit/4170da27b16f8a637c38c7d90476589c6e6ad82d))
+
+## [1.3.9](https://github.com/bobosun0713/create-fastvue/compare/v1.3.8...v1.3.9) (2025-06-29)
+
+
+### Bug Fixes
+
+* **template:** remove unused parser configurations ([5c10835](https://github.com/bobosun0713/create-fastvue/commit/5c1083552ec7129f3534cc4436f7efe608420b00))
+* **template:** update devDependencies for vue-typescript ([96de027](https://github.com/bobosun0713/create-fastvue/commit/96de027316a6efc92c1144f1bff3e8b6f332c933))
+
+## [1.3.8](https://github.com/bobosun0713/create-fastvue/compare/v1.3.7...v1.3.8) (2025-06-19)
+
+
+### Bug Fixes
+
+* **template:** enhance ESLint configuration for Vue TypeScript support ([17eb5ab](https://github.com/bobosun0713/create-fastvue/commit/17eb5aba25a644ef1c4ba0699355421ccb976433))
+
+## [1.3.7](https://github.com/bobosun0713/create-fastvue/compare/v1.3.6...v1.3.7) (2025-05-26)
+
+
+### Bug Fixes
+
+* **linting:** update type-check command ([91b387f](https://github.com/bobosun0713/create-fastvue/commit/91b387f5e4c41a6a9aed5ca9babaff15261d9a59))
+* **template:** update import rules for vue-typescript template ([884b148](https://github.com/bobosun0713/create-fastvue/commit/884b148ba267d5e7739e68be78314ca48412f6cb))
+
+## [1.3.6](https://github.com/bobosun0713/create-fastvue/compare/v1.3.5...v1.3.6) (2025-05-23)
+
+
+### Bug Fixes
+
+* **template:** add @types/jsdom and enable incremental builds in tsconfig files ([ae817b1](https://github.com/bobosun0713/create-fastvue/commit/ae817b1e7fc977f62e50a523313a8fa7a93ce7f9))
+
+## [1.3.5](https://github.com/bobosun0713/create-fastvue/compare/v1.3.4...v1.3.5) (2025-05-22)
+
+
+### Bug Fixes
+
+* **template:** remove composite from tsconfig ([352c27a](https://github.com/bobosun0713/create-fastvue/commit/352c27ab3706817dc1c098218bf4bd6e9505037e))
+* **template:** update tsconfig include paths ([f4fac7d](https://github.com/bobosun0713/create-fastvue/commit/f4fac7d7f419add8499c0b31bef9cc5a42875e43))
+* **template:** update type-check:force command ([7445b59](https://github.com/bobosun0713/create-fastvue/commit/7445b594c32dcdb29acc44e49f14a7bd11325f55))
+
+## [1.3.4](https://github.com/bobosun0713/create-fastvue/compare/v1.3.3...v1.3.4) (2025-05-21)
+
+
+### Bug Fixes
+
+* **template:** remove outdated dependencies ([c5dbc35](https://github.com/bobosun0713/create-fastvue/commit/c5dbc35d02f0b31160b7548626a92b2156cfb917))
+
+## [1.3.3](https://github.com/bobosun0713/create-fastvue/compare/v1.3.2...v1.3.3) (2025-05-20)
+
+## [1.3.2](https://github.com/bobosun0713/create-fastvue/compare/v1.3.1...v1.3.2) (2025-05-19)
+
+
+### Bug Fixes
+
+* **template:** update ESLint config to include .cache and improve file matching pattern ([eb3e259](https://github.com/bobosun0713/create-fastvue/commit/eb3e259f66103e307956c1e33eb5f40b56b5fcd7))
+
+## [1.3.1](https://github.com/bobosun0713/create-fastvue/compare/v1.3.0...v1.3.1) (2025-05-18)
+
+## [1.3.0](https://github.com/bobosun0713/create-fastvue/compare/v1.2.5...v1.3.0) (2025-05-17)
+
+
+### Features
+
+* **template:** add vue-typescript template for ESLint v9 ([0630e3b](https://github.com/bobosun0713/create-fastvue/commit/0630e3be255046709a2fddae591a9b523205e0c4))
+
 ## [1.2.5](https://github.com/bobosun0713/create-fastvue/compare/v1.2.4...v1.2.5) (2025-05-01)
 
 

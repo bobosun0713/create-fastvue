@@ -26,11 +26,13 @@ module.exports = {
     "no-debugger": "off",
     "no-void": ["error", { allowAsStatement: true }],
     "no-param-reassign": "off",
+    "no-restricted-syntax": "off",
     "func-names": "off",
 
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
+    "import/no-extraneous-dependencies": "off",
 
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
@@ -39,6 +41,7 @@ module.exports = {
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/prefer-for-of": "off",
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": "off",
 
     // https://typescript-eslint.io/rules/lines-between-class-members/
     "@typescript-eslint/lines-between-class-members": "off",
@@ -55,7 +58,7 @@ module.exports = {
 
   overrides: [
     {
-      files: ["*.js", "*.mjs", "*.cjs"],
+      files: ["**/?(*.)*?([cm])js"],
       rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-unsafe-call": "off",
@@ -65,14 +68,5 @@ module.exports = {
         "@typescript-eslint/no-unsafe-return": "off"
       }
     }
-  ],
-
-  settings: {
-    "import/resolver": {
-      typescript: {
-        alwaysTryTypes: true,
-        project: "./tsconfig.json"
-      }
-    }
-  }
+  ]
 };

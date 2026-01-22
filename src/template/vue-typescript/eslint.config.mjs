@@ -1,3 +1,4 @@
+import eslintJs from "@eslint/js";
 import { defineConfigWithVueTs, vueTsConfigs } from "@vue/eslint-config-typescript";
 import eslintConfigPrettier from "eslint-config-prettier";
 import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
@@ -6,7 +7,7 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import pluginVue from "eslint-plugin-vue";
 
 export default defineConfigWithVueTs(
-  { name: "custom-ignores", ignores: ["node_modules", "dist", "public"] },
+  { name: "custom-ignores", ignores: ["node_modules", "dist", "public", ".cache"] },
 
   pluginImportX.flatConfigs.recommended,
   pluginImportX.flatConfigs.typescript,
@@ -18,11 +19,11 @@ export default defineConfigWithVueTs(
       "import-x/no-duplicates": "error",
 
       // https://typescript-eslint.io/troubleshooting/typed-linting/performance/
-      "import/named": "off",
-      "import/namespace": "off",
-      "import/default": "off",
-      "import/no-named-as-default-member": "off",
-      "import/no-unresolved": "off"
+      "import-x/named": "off",
+      "import-x/namespace": "off",
+      "import-x/default": "off",
+      "import-x/no-named-as-default-member": "off",
+      "import-x/no-unresolved": "off"
     },
     settings: {
       "import-x/resolver-next": [
@@ -57,6 +58,7 @@ export default defineConfigWithVueTs(
     }
   },
 
+  eslintJs.configs.recommended,
   pluginVue.configs["flat/recommended"],
   vueTsConfigs.strictTypeChecked,
   vueTsConfigs.stylisticTypeChecked,
@@ -86,18 +88,11 @@ export default defineConfigWithVueTs(
 
   {
     name: "custom-specific-rules",
-    files: [".*.mjs", "tests/*.spec.ts"],
+    files: ["**/?(*.)*?([cm])js"],
     rules: {
       "@typescript-eslint/explicit-function-return-type": "off"
     }
   },
 
-  {
-    name: "custom-config-prettier",
-    rules: {
-      ...eslintConfigPrettier.rules,
-      // https://github.com/vuejs/eslint-config-prettier?tab=readme-ov-file#use-separate-commands-for-linting-and-formatting
-      "prettier/prettier": "off"
-    }
-  }
+  eslintConfigPrettier
 );

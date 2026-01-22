@@ -1,10 +1,12 @@
 {
   "extends": "./tsconfig.app.json",
-  "include": ["./tests", "./src"],
+  "include": ["tests/**/*.{spec,test}.ts", "tests/**/*.ts"],
   "compilerOptions": {
-    "composite": true,
+    "incremental": true,
+    "lib": [],
+    "types": ["node", "jsdom", "vitest/globals"],
     "tsBuildInfoFile": "./.cache/tsconfig.vitest.tsbuildinfo",
-    "types": ["vitest/globals"],
+
     "paths": {
       "@/*": ["./src/*"],
       "@tests/*": ["./tests/*"]

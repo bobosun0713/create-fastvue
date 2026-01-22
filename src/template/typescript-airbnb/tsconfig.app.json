@@ -1,11 +1,10 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["./src", "types"],
+  "include": ["src/**/*", "src/**/*.vue", "types/**/*.d.ts"],
   "compilerOptions": {
-    "composite": true,
+    "incremental": true,
     "tsBuildInfoFile": "./.cache/tsconfig.app.tsbuildinfo",
 
-    "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"]
     }

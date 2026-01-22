@@ -1,7 +1,1 @@
-if command -v pnpm > /dev/null 2>&1; then
-  pnpm commitlint --edit
-elif command -v yarn > /dev/null 2>&1; then
-  yarn commitlint --edit
-else
-  npx commitlint --edit
-fi
+# commit-msg
