@@ -9,9 +9,9 @@
     "preview": "vite preview",
     "test": "vitest",
     "lint": "eslint --fix --cache --cache-location .cache/.eslintcache",
-    "lint:all": "pnpm lint .",
+    "lint:all": "pnpm run lint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts,.vue",
     "format": "prettier --write '!(package|pnpm-lock).*' --ignore-unknown",
-    "format:all": "pnpm format .",
+    "format:all": "pnpm run format .",
     "prepare": "husky"
   },
   "dependencies": {
