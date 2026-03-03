@@ -54,6 +54,17 @@ export function createHuskyCommand(targetDirectory: string): void {
   });
 }
 
+export function rewritePkgName(targetDirectory: string, name: string): void {
+  const pkgPath = path.join(targetDirectory, "package.json");
+  if (!fs.existsSync(pkgPath)) return;
+
+  const content = fs.readFileSync(pkgPath, "utf-8");
+  const pkg = JSON.parse(content) as { name: string; [key: string]: unknown };
+  pkg.name = name;
+
+  fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2), "utf-8");
+}
+
 export function copyDirectory(src: string, dest: string): void {
   fs.mkdirSync(dest, { recursive: true });
 

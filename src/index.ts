@@ -7,7 +7,7 @@ import { cancel, confirm, intro, isCancel, log, outro, select, text } from "@cla
 import spawn from "cross-spawn";
 import color from "picocolors";
 
-import { create, createHuskyCommand, detectPackageManager, doneMessage } from "./utils";
+import { create, createHuskyCommand, detectPackageManager, doneMessage, rewritePkgName } from "./utils";
 
 function askProjectName(): Promise<string | symbol> {
   return text({
@@ -112,6 +112,7 @@ async function init(): Promise<void> {
 
   create(targetDirectory, templateDirectory, !!isOverwrite);
   createHuskyCommand(targetDirectory);
+  rewritePkgName(targetDirectory, projectName);
 
   if (isInstallStart) {
     installDependencies(targetDirectory);
