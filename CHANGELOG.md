@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.5.4](https://github.com/bobosun0713/create-fastvue/compare/v1.5.3...v1.5.4) (2026-03-03)
+
+
+### Bug Fixes
+
+* fix package name in CLI output ([2d092c7](https://github.com/bobosun0713/create-fastvue/commit/2d092c71bfe2a40af3c468f29a24760a94bbc68a))
+
 ## [1.5.3](https://github.com/bobosun0713/create-fastvue/compare/v1.5.2...v1.5.3) (2026-01-12)
 
 ## [1.5.2](https://github.com/bobosun0713/create-fastvue/compare/v1.5.1...v1.5.2) (2025-11-09)
