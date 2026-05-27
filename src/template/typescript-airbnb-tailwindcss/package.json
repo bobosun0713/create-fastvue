@@ -27,7 +27,7 @@
     "@rushstack/eslint-patch": "^1.8.0",
     "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
     "@tsconfig/node24": "^24.0.0",
-    "@types/jsdom": "^21.1.7",
+    "@types/jsdom": "^28.0.0",
     "@types/node": "^20.14.12",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
