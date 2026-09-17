@@ -2,7 +2,7 @@
   "name": "create-fastvue",
   "version": "1.5.4",
   "type": "module",
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@10.34.5",
   "license": "MIT",
   "author": "bobosun0713",
   "description": "Quickly set up the development environment for Vue.",
